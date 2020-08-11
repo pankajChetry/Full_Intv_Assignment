@@ -1,7 +1,7 @@
-"""my_activity_period URL Configuration
+"""stockInfo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.1/topics/http/urls/
+    https://docs.djangoproject.com/en/3.0/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -13,9 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path
+from my_api.views import MusicianListView
+from my_api.views import MusicianView
+from my_api.views import AlbumListView
+from my_api.views import AlbumView
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
+    url(r'^musicians/', MusicianListView.as_view()),
+    url(r'^api/musicians/', MusicianView.as_view()),
+    url(r'^albums/', AlbumListView.as_view()),
+    url(r'^api/albums/', AlbumView.as_view()),
 ]
