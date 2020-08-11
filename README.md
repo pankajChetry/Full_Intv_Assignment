@@ -103,5 +103,9 @@ output--
 ]
 
 -- Other urls and views are also added to update, delete and destroy data in the database.
+-- other end points
+* http://localhost:8000/api/musicians/
+* http://localhost:8000/albums/
+* http://localhost:8000/api/albums/
 -- Tried my best to create and display the nested json data using django rest framework, hope to get more task as same.
 -- Thank you
