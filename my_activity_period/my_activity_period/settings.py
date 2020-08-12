@@ -25,7 +25,7 @@ SECRET_KEY = 'th@6x3cq(hqrl3qyx5x-(#v%qtq0=)2pt8syjeif3@qw=c^8l='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['fullthrottle-int-assignment.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['fullthrottle-int-assignment.herokuapp.com','127.0.0.1','localhost']
 
 
 # Application definition
