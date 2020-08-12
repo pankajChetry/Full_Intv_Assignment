@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'th@6x3cq(hqrl3qyx5x-(#v%qtq0=)2pt8syjeif3@qw=c^8l='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fullthrottle-int-assignment.herokuapp.com','127.0.0.1']
 
 
 # Application definition
