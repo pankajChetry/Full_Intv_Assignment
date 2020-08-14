@@ -1,1 +1,1 @@
-web: gunicorn my_activity_period.wsgi --log-file -
+web: gunicorn my_activity_period/my_activity_period.wsgi --log-file -
